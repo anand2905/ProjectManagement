@@ -1,0 +1,10 @@
+
+<h1> Thankyou for sining up </h1>
+ <table>
+    <tr><td><%= @user.first_name %></td>
+        <tr><td><%= @user.last_name %></td>
+       <td><%= link_to "CreateProject", new_user_project_path(@user) %></td>
+    </tr>
+
+ </table></tr></br><br><br>
+<td><%= link_to "Log-Out", users_path %></td><br>

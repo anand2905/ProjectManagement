@@ -1,0 +1,30 @@
+
+<h1> SignUp</h1></br>
+
+
+    <%= form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
+      <%= f.label :FirstName %><br>
+      <%= f.text_field :first_name, class: 'form-control' %><br><br>
+      
+      <%= f.label :LastName %><br>
+      <%= f.text_field :last_name, class: 'form-control' %><br><br>
+      
+
+      <%= f.label :email %><br>
+      <%= f.email_field :email, class: 'form-control' %><br><br>
+
+      <%= f.label :password %><br>
+      <%= f.password_field :password, class: 'form-control' %><br><br>
+
+      <%= f.label :password_confirmation, "Confirmation" %><br>
+      <%= f.password_field :password_confirmation, class: 'form-control' %><br><br>
+
+      <%= f.label :image %><br>
+      <%= f.file_field :image, class: 'form-control' %><br><br
+
+      <%= f.label :DeveloperId %><br>
+      <%= f.text_field :developer_id, class: 'form-control' %><br><br>
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
